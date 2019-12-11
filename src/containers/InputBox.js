@@ -23,7 +23,6 @@ class InputBox extends Component {
 
   calculateMortgage(mortgageDetails) {
     let result =(mortgageDetails.userSalary + mortgageDetails.partnerSalary) * 3;
-    result *= (mortgageDetails.interestRate + 1);
     this.setState({
       mortgageAmount: result
     })
